@@ -1,6 +1,6 @@
-#line 1 "D:/GitHub/MENU_LCD_PIC32/PANEL/PANEL.c"
-#line 1 "d:/github/menu_lcd_pic32/panel/panel.h"
-#line 13 "d:/github/menu_lcd_pic32/panel/panel.h"
+#line 1 "D:/GitHub/MenuLcd_PIC32/PANEL/PANEL.c"
+#line 1 "d:/github/menulcd_pic32/panel/panel.h"
+#line 13 "d:/github/menulcd_pic32/panel/panel.h"
  sbit T_MAIS at RB11_bit;
  sbit T_MENOS at RB10_bit;
  sbit T_CONFIRMA at RB13_bit;
@@ -33,7 +33,7 @@
  sbit DET2_Direction at TRISD6_bit;
  sbit DET3_Direction at TRISD5_bit;
  sbit DET4_Direction at TRISD4_bit;
-#line 10 "D:/GitHub/MENU_LCD_PIC32/PANEL/PANEL.c"
+#line 10 "D:/GitHub/MenuLcd_PIC32/PANEL/PANEL.c"
 void LedOperacaoON() { L_OPERACAO = 0; }
 void LedOperacaoOFF() { L_OPERACAO = 1; }
 
@@ -46,7 +46,7 @@ char TeclaMenos() { return T_MENOS; }
 char TeclaConfirma() { return T_CONFIRMA; }
 char TeclaCancela() { return T_CANCELA; }
 char TeclaManual() { return T_MANUAL; }
-#line 29 "D:/GitHub/MENU_LCD_PIC32/PANEL/PANEL.c"
+#line 29 "D:/GitHub/MenuLcd_PIC32/PANEL/PANEL.c"
 void Panel_Init()
 {
 

@@ -1,5 +1,5 @@
-#line 1 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD_Main.c"
-#line 1 "d:/github/menu_lcd_pic32/menu_lcd_prototype.h"
+#line 1 "D:/GitHub/MenuLcd_PIC32/MENU_LCD_Main.c"
+#line 1 "d:/github/menulcd_pic32/menu_lcd_prototype.h"
 
 
 
@@ -24,7 +24,7 @@ void Keyboard_Interrupt();
 
 
 void AD_Init();
-#line 1 "d:/github/menu_lcd_pic32/timer/timer.h"
+#line 1 "d:/github/menulcd_pic32/timer/timer.h"
 
 
 
@@ -34,13 +34,13 @@ void AD_Init();
 
 
 void TimerKeyboard_Init();
-#line 1 "d:/github/menu_lcd_pic32/lcd/lcd_prototype.h"
+#line 1 "d:/github/menulcd_pic32/lcd/lcd_prototype.h"
 
 
 
  void Lcd_Inicialize( void );
  void PrintLcd( char );
-#line 41 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD_Main.c"
+#line 41 "D:/GitHub/MenuLcd_PIC32/MENU_LCD_Main.c"
 void main() {
 
  AD_Init();
@@ -69,7 +69,7 @@ void main() {
 
 
 }
-#line 75 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD_Main.c"
+#line 75 "D:/GitHub/MenuLcd_PIC32/MENU_LCD_Main.c"
 void AD_Init()
 {
 

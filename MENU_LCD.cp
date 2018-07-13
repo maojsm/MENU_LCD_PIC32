@@ -1,7 +1,7 @@
-#line 1 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD.c"
-#line 1 "d:/github/menu_lcd_pic32/menu_lcd.h"
-#line 1 "d:/github/menu_lcd_pic32/menu_lcd_read.h"
-#line 1 "d:/github/menu_lcd_pic32/panel/panel_prototype.h"
+#line 1 "D:/GitHub/MenuLcd_PIC32/MENU_LCD.c"
+#line 1 "d:/github/menulcd_pic32/menu_lcd.h"
+#line 1 "d:/github/menulcd_pic32/menu_lcd_read.h"
+#line 1 "d:/github/menulcd_pic32/panel/panel_prototype.h"
 
 
 void Panel_Init();
@@ -17,10 +17,10 @@ void LedOperacaoOFF();
 
 char ChaveIntermitente();
 char DisjuntorFocos();
-#line 5 "d:/github/menu_lcd_pic32/menu_lcd_read.h"
+#line 5 "d:/github/menulcd_pic32/menu_lcd_read.h"
 char keyPressed= 95 ;
 char T0_cntKEY;
-#line 24 "d:/github/menu_lcd_pic32/menu_lcd_read.h"
+#line 24 "d:/github/menulcd_pic32/menu_lcd_read.h"
 char KeyReading()
 {
 
@@ -33,7 +33,7 @@ char KeyReading()
  return( 95 );
 
 }
-#line 43 "d:/github/menu_lcd_pic32/menu_lcd_read.h"
+#line 43 "d:/github/menulcd_pic32/menu_lcd_read.h"
 char KeyRead()
 {
  char keyCurrent;
@@ -44,7 +44,7 @@ char KeyRead()
 
  return(keyCurrent);
 }
-#line 56 "d:/github/menu_lcd_pic32/menu_lcd_read.h"
+#line 56 "d:/github/menulcd_pic32/menu_lcd_read.h"
 void Keyboard_Interrupt()
 {
 
@@ -63,7 +63,7 @@ void Keyboard_Interrupt()
  }
  }
 }
-#line 1 "d:/github/menu_lcd_pic32/panel/panel_prototype.h"
+#line 1 "d:/github/menulcd_pic32/panel/panel_prototype.h"
 
 
 void Panel_Init();
@@ -79,13 +79,13 @@ void LedOperacaoOFF();
 
 char ChaveIntermitente();
 char DisjuntorFocos();
-#line 1 "d:/github/menu_lcd_pic32/lcd/lcd_prototype.h"
+#line 1 "d:/github/menulcd_pic32/lcd/lcd_prototype.h"
 
 
 
  void Lcd_Inicialize( void );
  void PrintLcd( char );
-#line 14 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD.c"
+#line 14 "D:/GitHub/MenuLcd_PIC32/MENU_LCD.c"
 typedef struct MenuItem Item;
 static void LcdWriteFromROM( const char* texto );
 
@@ -101,12 +101,12 @@ struct MenuItem
  void(*Tarefa)(char);
  char Parms;
 };
-#line 33 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD.c"
+#line 33 "D:/GitHub/MenuLcd_PIC32/MENU_LCD.c"
 static char selecao = 0;
 static const Item** MenuAtual;
 static const Item*** MenuAnterior;
 static unsigned Stack[16];
-#line 45 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD.c"
+#line 45 "D:/GitHub/MenuLcd_PIC32/MENU_LCD.c"
 const Item Menu30 = {  0 , "PORTD = 32", &DefinirSaidas, 32 };
 const Item* Screen3[] = { &Menu30, 0 };
 
@@ -127,7 +127,7 @@ const Item* Screen2[] = { &Menu20, &Menu21, &Menu22, &Menu23, 0 };
 const Item Menu01 = { Screen1, "FUNCAO 1",  0 , 0 };
 const Item Menu02 = { Screen2, "FUNCAO 2",  0 , 0 };
 const Item* TelaInicial[] = { &Menu01, &Menu02, 0 };
-#line 72 "D:/GitHub/MENU_LCD_PIC32/MENU_LCD.c"
+#line 72 "D:/GitHub/MenuLcd_PIC32/MENU_LCD.c"
 static char MostrarItens( const Item* menu[], char sel )
 {
 char index = 0, row = 1;

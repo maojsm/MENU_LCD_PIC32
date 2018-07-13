@@ -1,5 +1,5 @@
-#line 1 "D:/GitHub/MENU_LCD_PIC32/TIMER/TIMER.c"
-#line 1 "d:/github/menu_lcd_pic32/timer/timer.h"
+#line 1 "D:/GitHub/MenuLcd_PIC32/TIMER/TIMER.c"
+#line 1 "d:/github/menulcd_pic32/timer/timer.h"
 
 
 
@@ -9,7 +9,7 @@
 
 
 void TimerKeyboard_Init();
-#line 1 "d:/github/menu_lcd_pic32/panel/panel_prototype.h"
+#line 1 "d:/github/menulcd_pic32/panel/panel_prototype.h"
 
 
 void Panel_Init();
@@ -25,7 +25,7 @@ void LedOperacaoOFF();
 
 char ChaveIntermitente();
 char DisjuntorFocos();
-#line 1 "d:/github/menu_lcd_pic32/menu_lcd_prototype.h"
+#line 1 "d:/github/menulcd_pic32/menu_lcd_prototype.h"
 
 
 
@@ -50,7 +50,7 @@ void Keyboard_Interrupt();
 
 
 void AD_Init();
-#line 13 "D:/GitHub/MENU_LCD_PIC32/TIMER/TIMER.c"
+#line 13 "D:/GitHub/MenuLcd_PIC32/TIMER/TIMER.c"
 void InterruptTimerKeyboard() iv IVT_TIMER_4 ilevel 5 ics ICS_AUTO {
 
 
@@ -68,7 +68,7 @@ void InterruptTimerKeyboard() iv IVT_TIMER_4 ilevel 5 ics ICS_AUTO {
 
 
 }
-#line 35 "D:/GitHub/MENU_LCD_PIC32/TIMER/TIMER.c"
+#line 35 "D:/GitHub/MenuLcd_PIC32/TIMER/TIMER.c"
 void TimerKeyboard_Init() {
  T4CON = 0x8050;
  T4IP0_bit = 1;
